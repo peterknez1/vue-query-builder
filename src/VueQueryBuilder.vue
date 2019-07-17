@@ -59,6 +59,10 @@ export default {
     },
     value: Object
   },
+  
+  mounted() {
+    console.log("vue-query-builder-peter");
+  },
 
   data () {
     return {
