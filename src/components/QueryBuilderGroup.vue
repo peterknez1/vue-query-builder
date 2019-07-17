@@ -60,13 +60,6 @@ export default {
 
   props: ['ruleTypes', 'type', 'query', 'rules', 'index', 'maxDepth', 'depth', 'styled', 'labels'],
 
-  data: function() {
-    return {
-      borderColors: [' #FFEBCD', '#0000FF', '#8A2BE2', '#A52A2A', '#5F9EA0'],
-      activeColor: "",
-    }
-  },
-
   mounted() {
     this.activeColor = this.borderColors[this.depth % this.borderColors.length];
   },
@@ -131,7 +124,9 @@ export default {
 
   data () {
     return {
-      selectedRule: this.rules[0]
+      selectedRule: this.rules[0],
+	borderColors: ['#FFEBCD', '#0000FF', '#8A2BE2', '#A52A2A', '#5F9EA0'],
+      activeColor: "",
     }
   },
 
