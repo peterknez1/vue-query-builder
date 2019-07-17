@@ -61,6 +61,7 @@ export default {
   props: ['ruleTypes', 'type', 'query', 'rules', 'index', 'maxDepth', 'depth', 'styled', 'labels'],
 
   mounted() {
+	console.log("rue-query-builder-peter");
     this.activeColor = this.borderColors[this.depth % this.borderColors.length];
   },
 
